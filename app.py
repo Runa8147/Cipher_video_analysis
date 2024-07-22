@@ -8,7 +8,7 @@ from google.api_core import exceptions as google_exceptions
 # Configure Gemini API
 GEMINI_API_KEY=st.secrets['GEMINI_API_KEY']
 genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel('gemini-1.5-pro')
+model = genai.GenerativeModel('gemini-1.5-flash')
 
 SUPPORTED_EXTENSIONS = ['.mp4', '.avi', '.mov', '.mp3', '.wav', '.png', '.jpg', '.jpeg']
 
