@@ -6,7 +6,7 @@ import time
 from google.api_core import exceptions as google_exceptions
 
 # Configure Gemini API (replace with your actual API key)
-GEMINI_API_KEY = "YOUR_API_KEY"  # Placeholder, replace with your actual key
+GEMINI_API_KEY = st.secrets['GEMINI_API_KEY']  # Placeholder, replace with your actual key
 genai.configure(api_key=GEMINI_API_KEY)
 model = genai.GenerativeModel('gemini-1.5-flash')  # Replace if using a different model
 
